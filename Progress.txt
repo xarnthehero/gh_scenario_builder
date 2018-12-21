@@ -1,0 +1,68 @@
++Add three columns
++Get background image to display
++Add 3 buttons to the right column
++Add scenario text box on top of background
++Connect Redux, button changes text
++Typeable scenario box
++Fill out title
++Add draggable map pieces
+	+Make a piece draggable
+	+Make side panel tab for map pieces
+	+Add map buttons
+	+Make buttons draggable, creates new map piece when placed in scenario area
+Add side panel with map pieces
+Add scenario text
+Snap map pieces together
+
+
+
+Open Problems -
+Scenario, Requirements, and Goal text boxes dont extend very far.
+Map tile dragging is off
+Map tile preview should just be the image
+
+
+Components -
+Map
+	Map Container
+	Map Tile
+	Enemy
+	Doodad
+		1 hex, 2 hex?
+	Label
+Map Tile List
+Text Area
+	Text Box
+	Line
+	Heading
+	
+zCmc36lb2DR2
+
+Side Panel -
+Drag out
+	Monsters
+	Doodads
+	Map Tiles
+Add / Remove Page
+Undo
+Add text items
+	Lines --- 1 ---
+	Introduction, Special Rules, Conclusion
+	Symbols like labels (1)
+Save?
+
+
+
+Drag n Drop -
+Item - javascript description of item being dragged - { card:42 }, minimal description
+Types - item categories
+Monitors - has state information about items being dragged, where the mouse is
+Connectors - connects react object (which goes to DOM object) to draggable config
+Drag Source - 
+Drop Target -
+
+getInitialClientOffset() - where the mouse started dragging [absolute]
+getInitialSourceClientOffset() - [x, y] of the dragged piece
+getClientOffset() - where the mouse ended [absolute]
+getDifferenceFromInitialOffset() - Mouse difference
+getSourceClientOffset() - [x, y] of where the piece should go..

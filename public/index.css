@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+ font-family: nyala;
+}
+
+.bb {
+    border-style: solid;
+    border-width: medium;
+}
+
+/** For input text **/
+input.borderless {
+  border: 0;
+  background-color: rgba(0, 0, 0, 0);;
+}
+input.borderless:focus {
+  outline: none;
+}
+
+.ghtitle {
+  color: #1e0285;
+  font-family: "Pirata One";
+}
